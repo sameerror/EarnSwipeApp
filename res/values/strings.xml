@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EarnSwipe</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log Out</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="save">Save</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">D.O.B</string>
+    <string name="aboutMe">About Me</string>
+    <string name="income">Income</string>
+    <string name="education">Heighest Education Qualification</string>
+    <string name="question1">Question type 1 (two options question)</string>
+    <string name="question2">Question type 2 (multiple options question)</string>
+    <string name="question3">Question type 3 (review/rating options question)</string>
+    <string name="facebook_app_id">635441709910220</string>
+    <string name="you_have">You currently have</string>
+    <string name="earnswipe_credits">EarnSwipe credits</string>
+    <string name="exchange_text">Exchange your EarnSwipe credits for Google Play Store Credits</string>
+    <string name="coming_soon">Coming soon</string>
+
+    <string-array name="aboutMeArray">
+        <item>programmer</item>
+        <item>developer</item>
+        <item>artist</item>
+        <item>gamer</item>
+        <item>guitar player</item>
+        <item>footballer</item>
+    </string-array>
+    <string-array name="educationArray">
+        <item>Below Graduate</item>
+        <item>Graduate</item>
+        <item>Post Graduate</item>
+    </string-array>
+    <string-array name="incomeArray">
+        <item>Upto Rs.15000</item>
+        <item>Rs.15000&#8211;25000</item>
+        <item>Rs.25000&#8211;45000</item>
+        <item>Rs.45000&#8211;75000</item>
+        <item>Over Rs.75000</item>
+    </string-array>
+    <string-array name="menuArray">
+        <item>My Rewards</item>
+        <item>My Profile</item>
+        <item>Log out</item>
+        <item>About app</item>
+    </string-array>
+
+</resources>

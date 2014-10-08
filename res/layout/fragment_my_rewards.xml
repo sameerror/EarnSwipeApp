@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.nurakanbpo.earnswipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e2" >
+
+    <RelativeLayout
+        android:id="@+id/totalCreditsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background_no_curve"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/youHavetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:text="@string/you_have"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/creditsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youHavetextView"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/earnswipeCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/creditsTextView"
+            android:padding="5dp"
+            android:text="@string/earnswipe_credits"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <com.nurakanbpo.earnswipe.helper.MagicTextView
+        xmlns:qwerjk="http://schemas.android.com/apk/res/com.nurakanbpo.earnswipe"
+        android:id="@+id/comingSoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalCreditsLayout"
+        android:padding="10dp"
+        android:text="@string/coming_soon"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        qwerjk:foreground="@android:color/white"
+        qwerjk:innerShadowColor="#454347"
+        qwerjk:innerShadowDy="2dp"
+        qwerjk:innerShadowRadius="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comingSoon"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/dialog_holo_light_frame" >
+
+        <TextView
+            android:id="@+id/exchangeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/dummyView"
+            android:padding="5dp"
+            android:text="@string/exchange_text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <View
+            android:id="@+id/dummyView"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/exchangeTextView"
+            android:layout_alignTop="@+id/exchangeTextView"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/googlePlayStoreImage"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/googlePlayStoreImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/google_play_store_96" />
+    </RelativeLayout>
+
+</RelativeLayout>
